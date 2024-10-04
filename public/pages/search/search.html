@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>diskplus</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../../main.css">
+</head>
+
+<body class="page-search">
+    <header class="headercolor mb-1">
+        <nav class="navbar navbar-expand-lg navbarindex  ">
+            <div class="bigdiv container-fluid">
+                <a class="navbar-brand" href="../../../index.html"><img class="img-acceuil"
+                        src="../../img/disquepluslogo3.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 link-cont">
+                        <li class="nav-item ms-4 link-wrapper">
+                            <a class="nav-link hover-3" aria-current="page" href="../../../index.html"><span><svg
+                                        aria-hidden="true" aria-label="home" color="#f9f9f9" role="img" transform=""
+                                        version="1.1" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"
+                                        data-route="ACCUEIL" class="sc-jhAzac vfaMf svg-nav-link">
+                                        <title></title>
+                                        <path
+                                            d="M26.882 19.414v10.454h-5.974v-5.227h-5.974v5.227H8.961V19.414H5.227L17.921 6.72l12.694 12.694h-3.733z"
+                                            class="sc-hzDkRC kzwgVO"></path>
+                                    </svg></span>
+                                <p>ACCUEIL</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4 link-wrapper">
+                            <a class="nav-link hover-3" aria-current="page"
+                                href="../../pages/search/search.html"><span><svg aria-hidden="true" aria-label="search"
+                                        color="#f9f9f9" role="img" transform="" version="1.1" viewBox="0 0 36 36"
+                                        xmlns="http://www.w3.org/2000/svg" data-route="RECHERCHE"
+                                        class="sc-jhAzac vfaMf svg-nav-link">
+                                        <title></title>
+                                        <path
+                                            d="M21.866 24.337c-3.933 2.762-9.398 2.386-12.914-1.13-3.936-3.936-3.936-10.318 0-14.255 3.937-3.936 10.32-3.936 14.256 0 3.327 3.327 3.842 8.402 1.545 12.27l4.56 4.558a2 2 0 0 1 0 2.829l-.174.173a2 2 0 0 1-2.828 0l-4.445-4.445zm-5.786-1.36a6.897 6.897 0 1 0 0-13.794 6.897 6.897 0 0 0 0 13.794z"
+                                            class="sc-hzDkRC kzwgVO"></path>
+                                    </svg></span>
+                                <p>RECHERCHE</p>
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item ms-4 link-wrapper">
+                            <a class="nav-link hover-3"  aria-current="page" href="../../pages/search/search.html">MA LISTE</a>
+                        </li> -->
+                        <li class="nav-item ms-4 link-wrapper">
+                            <a class="nav-link hover-3" aria-current="page"
+                                href="../../pages/search/search.html""><span><svg aria-hidden=" true"
+                                aria-label="movies" color="#f9f9f9" role="img" transform="" version="1.1"
+                                viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" data-route="FILMS"
+                                class="sc-jhAzac vfaMf svg-nav-link">
+                                <title></title>
+                                <path
+                                    d="M24.71 20.07a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m-12.262 0a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m6.173-10.31a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m0 12.262a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m-1.544-4.629a.846.846 0 1 0-1.197 1.196.846.846 0 0 0 1.197-1.196m18.06-.644c-3.33 6.913-8.165 9.928-11.635 11.24-2.57.971-4.762 1.178-5.949 1.208-.348.032-.698.053-1.052.053C10.287 29.25 5.25 24.213 5.25 18S10.287 6.75 16.5 6.75c6.214 0 11.25 5.037 11.25 11.25a11.19 11.19 0 0 1-2.493 7.054c2.832-1.612 5.844-4.382 8.138-9.143a.968.968 0 0 1 1.742.838"
+                                    class="sc-hzDkRC kzwgVO"></path></svg></span>
+                                <p>FILMS</p>
+                            </a>
+                        </li>
+                        <li class="nav-item ms-4 link-wrapper">
+                            <a class="nav-link hover-3" aria-current="page"
+                                href="../../pages/search/search.html""><span><svg aria-hidden=" true"
+                                aria-label="series" color="#f9f9f9" role="img" transform="" version="1.1"
+                                viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" data-route="SÉRIES"
+                                class="sc-jhAzac vfaMf svg-nav-link">
+                                <title></title>
+                                <path
+                                    d="M18.84 11.965h6.722a4 4 0 0 1 4 4V26a4 4 0 0 1-4 4H10.375a4 4 0 0 1-4-4V15.965a4 4 0 0 1 4-4h6.211l-3.981-3.981a1.162 1.162 0 1 1 1.643-1.644l3.465 3.465 3.464-3.465a1.162 1.162 0 0 1 1.644 1.644l-3.982 3.981zm6.428 7.73a1.718 1.718 0 1 0 0-3.436 1.718 1.718 0 0 0 0 3.436zm0 6.011a1.718 1.718 0 1 0 0-3.435 1.718 1.718 0 0 0 0 3.435z"
+                                    class="sc-hzDkRC kzwgVO"></path></svg></span>
+                                <p>SERIES</p>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </nav>
+
+
+    </header>
+    <main class="mainsection">
+        <div class="div-search ">
+            <input class="bg-search mb-5" id="searchbar" onkeyup="search_animal()" type="text" name="search"
+                placeholder="Titre ou genre..">
+        </div>
+
+
+
+
+
+        <!-- cards carousel -->
+        <ol id='list'>
+
+
+
+
+            <div class="card-container-search">
+                <li class="movies"><span class="dnone">spider man</span><span class="dnone">spider-man</span><span
+                        class="dnone">marvel</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BC43084FDE2395898283560F553EA284E5D9A65A3062564F9286891E0FD84F41/scale?width=400&aspectRatio=1.78&format=jpeg"
+                            class="card-img" alt="">
+                        <a href="../../pages/marvel/spidermanhomecoming.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">avengers</span><span class="dnone">avengers endgame</span><span
+                        class="dnone">marvel</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/A4B58B11C7019B5403E07D551249121C4F4CC99119907F4460F0725B34A27086/scale?width=400&aspectRatio=1.78&format=jpeg"
+                            class="card-img" alt="">
+                        <a href="../../pages/marvel/avengersendgame.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">spider man</span><span class="dnone">spider-man</span><span
+                        class="dnone">spider man</span><span class="dnone">the amazing spider man</span><span
+                        class="dnone">spider man</span><span class="dnone">spider-man</span><span class="dnone">spider
+                        man</span><span class="dnone">the amazing spider man2</span><span class="dnone">the amazing
+                        spider man 2</span><span class="dnone">marvel</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/096710DCDBF4015BD51E95E05FF49CD680B16C8EB494368A97EA468AE7975CA7/scale?width=400&aspectRatio=1.78&format=jpeg"
+                            class="card-img" alt="">
+                        <a href="../../pages/marvel/theamazingspiderman2.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="movies"><span class="dnone">Captain America</span><span class="dnone">captain america civil
+                        war</span><span class="dnone">marvel</span>
+                    <div class="card ">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/52C108DF6292E38F697B97A15684BB24A4A7B02D70D1B6B72B7D65E75D24B7A0/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/captainamericacivilwar.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="movies"><span class="dnone">Captain America</span><span class="dnone">Captain America: First Avenger</span><span class="dnone">Captain America First Avenger</span><span class="dnone">Captain America 1</span><span class="dnone">marvel</span>
+                    <div class="card ">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5E17CE7825EAEB4BDD7E5A1C25FF1A56B52EF2E138144BEAA82BE6B8864E9B83/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/CaptainAmericaFirstAvenger.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">thor</span><span class="dnone">Thor: Love and Thunder</span><span
+                        class="dnone">Thor Love and Thunder</span><span class="dnone">marvel</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/09088E90F08CFF49A8D1DF828AFECAA08CE7D42BB5D6CFE7718209A474EA2229/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/ThorLoveandThunder.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">spider man no way home</span><span class="dnone">spider-man no
+                        way home</span><span class="dnone">spider man</span><span class="dnone">spider-man</span><span
+                        class="dnone">marvel</span>
+                    <div class="card">
+                        <img srcset="https://thumb.canalplus.pro/http/unsafe/332x186/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/108137793, https://thumb.canalplus.pro/http/unsafe/664x372/filters:quality(80)/img-hapi.canalplus.pro:80/ServiceImage/ImageID/108137793 2x"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/SpiderManNoWayHome.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">avengers</span><span class="dnone">avengers infinity
+                        war</span><span class="dnone">marvel</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B07FABAA52E9F1962D1A3EE997F99564D8F77C567258EA93C17485A646776504/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/avengersinfinitywar.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">iron man</span><span class="dnone">ironman</span><span
+                        class="dnone">iron man3</span><span class="dnone">iron man 3</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/ADA256E903D911CE4232B7071120432753E6C30A63E1E62DCAD9951785C3EF2F/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/IronMan3.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">iron man</span><span class="dnone">ironman</span><span
+                        class="dnone">iron man1</span><span class="dnone">iron man 1</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/EAEA7A6A30CF7AF96370D97FEACA1ABBFBBF4D837AB24391566BE5C67F71DF8E/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/ironman1.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">Les Gardiens de la Galaxie</span><span class="dnone">Les Gardiens
+                        de la Galaxie 1</span><span class="dnone">Les Gardiens de la Galaxie1</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/06C83811F429D570FE23D53D3F3D31D3315DF0A830F3B0CCE02B15E8299DC8C5/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/LesGardiensdelaGalaxie.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">Doctor Strange</span><span class="dnone">Doctor Strange in the
+                        Multiverse of Madness
+                    </span><span class="dnone">Doctor Strange 2</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/DDCFEF24AB9ED385C588EAFA23AF44AD5260DA1150A8EE210CD533506F9D640A/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="../../pages/marvel/DoctorStrangeintheMultiverseofMadness.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="movies"><span class="dnone">encanto la fantastique famille madrigal</span><span
+                        class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/C79814CD0D4F46B8CD1161B4E8A89AD341F18F8D0A764A73466641F760E0299A/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/EncantolafantastiquefamilleMadrigal.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">Raya et le Dernier Dragon</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/E20FD4CF10323F3D84B0D1E32F9BB2DDE5C7799C0B35CF50D0B43A07B98BEFBB/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/RayaetleDernierDragon.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">le roi lion</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/9CA683E08AF7D2F4C0A50A0EF024F141E44CF8DF7CC411CECAEA5168E8F2D731/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/LeRoiLion.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">L'Âge de glace Les Aventures de Buck Wild</span>
+                    <span class="dnone">L'Âge de glace : Les Aventures de Buck Wild</span><span class="dnone">L'age de
+                        glace : Les Aventures de Buck Wild</span><span class="dnone">L'age de glace</span><span
+                        class="dnone">L'age de glace Les Aventures de Buck Wild</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/40FD1445971A298DE083DDD1D285264CBE133226DD61A580F9B147011DBECC3C/badging?width=400&aspectRatio=1.78&format=jpeg&label=disneyplusoriginal"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/L'agedeglaceLesAventuresdeBuckWild.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">Buzz l'Éclair</span><span class="dnone">Buzz l'eclair</span><span
+                        class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/092BED832C4106D5FED6BD1C2FA5BF4B091D8B4D9B72EA062E78D4BE7DDAED57/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/BuzzlEclair.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">Le Livre de la jungle</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/BA107CAF5E0A0F876926B6696FB127BFEE9ED40A26923DFAF0303C1205C49934/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/LeLivredelajungle.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">Mulan</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/74837103CFC36C9E82C27589E8290F906B00A27A3AA5BB12906C009163C16978/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/Mulan.html">
+                            <div class="card-body">
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                        class="card-img" alt="">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <div class="card-body">
+                                
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <!-- :::::::::::::::::::: -->
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="movies"><span class="dnone">La Reine des neiges 2</span><span class="dnone">La Reine des
+                        neiges2</span><span class="dnone">La Reine des neiges</span><span class="dnone">disney</span>
+                    <div class="card">
+                        <a href="public/pages/disney/LaReinedesneiges2.html">
+                            <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/36E23696C9BAB564302DAF7E6F9C38EBC450ABA9CF6DD92E512FD6CB8C97A1F2/scale?width=400&aspectRatio=1.78&format=jpeg"
+                                class="card-img" alt="">
+                            <div class="card-body">
+                                <h2 class="name">movie name</h2>
+                                <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                                <button class="watchlist-btn">add to watchlist</button>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                
+
+            </div>
+
+
+
+
+
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+
+            <!-- <div class="movies-list">
+                <button class="pre-btn"><img src="public/img/pre.png" alt=""></button>
+                <button class="nxt-btn"><img src="public/img/nxt.png" alt=""></button>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="public/img/poster 1.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 2.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 3.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 4.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 5.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 5.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 6.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 7.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 8.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 9.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 10.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 11.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 11.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 1.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 5.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 5.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 9.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 10.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 6.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster 3.png" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="public/img/poster13.jfif" class="card-img" alt="">
+                        <div class="card-body">
+                            <h2 class="name">movie name</h2>
+                            <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                            <button class="watchlist-btn">add to watchlist</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> -->
+        </ol>
+        <!-- fin cards carousel -->
+      
+    </main>
+    <!-- credits: https://www.codeply.com/p/EJd6H4Ejyi -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="../../main.js"></script>
+   <!-- Site footer -->
+  <footer class="site-footer mt-5">
+    <div class="container">
+
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+            <a href="#">disqueplus</a>.
+          </p>
+        </div>
+
+        <!-- :: -->
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
