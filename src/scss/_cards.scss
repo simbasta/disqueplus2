@@ -1,0 +1,360 @@
+@use "variables" as *;
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* .container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+} */
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-content: flex-end;
+  justify-content: space-around;
+}
+
+.item {
+  width: 35%;
+  position: relative;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.item__border {
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+  border-radius: 60px;
+  border: 4px solid rgba(249, 249, 249, 0.1);
+  transition: transform 250ms ease-in-out, border 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+
+.item__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 56px;
+  z-index: 1;
+}
+
+.item__image.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+  visibility: hidden;
+}
+
+.item:hover .item__border {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 40px 58px -16px, rgba(0, 0, 0, 0.72) 0px 30px 22px -10px;
+  transform: scale(1.05);
+  border: 4px solid rgba(249, 249, 249, 0.8);
+}
+
+.item:hover .item__image.hover-image {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 1;
+  visibility: visible;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .item {
+    width: 20%;
+  }
+}
+/* cards carousel */
+.title {
+  color: $color-white;
+  opacity: 0.9;
+  padding-left: 4%;
+  text-transform: capitalize;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.movies-list {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  margin: 10px 0 20px;
+}
+
+.card-container {
+  position: relative;
+  width: 92%;
+  padding-left: 10px;
+  height: 220px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+}
+
+
+/* .card-container-search {
+  position: relative;
+  width: 100%;
+  height: 879px;
+  display: flex;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+} */
+.card-container-search {
+  position: relative;
+  width: 100%;
+  height: 1093px;
+  display: flex;
+  margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* .card{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 10px;
+    transition: .5s;
+} */
+
+.card {
+  position: relative;
+  min-width: 341px;
+  width: 172px;
+  height: 198px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  transition: 0.3s;
+  object-fit: cover;
+  background-color: #131520;
+  box-shadow: #41464b 0px 16px 8px -10px;
+
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border: 4px solid rgba(249, 249, 249, 0.8);
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card-body {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+  padding: 10px;
+  transition: 0.5s;
+}
+
+.name {
+  color: $color-white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 60%;
+}
+
+.des {
+  color: $color-white;
+  opacity: 0.8;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.watchlist-btn {
+  position: relative;
+  width: 100%;
+  text-transform: capitalize;
+  background: none;
+  border: none;
+  font-weight: 500;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 5px 0;
+  cursor: pointer;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+.watchlist-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -5px;
+  height: 35px;
+  width: 35px;
+  background-image: url(images/add.png);
+  background-size: cover;
+  transform: scale(0.4);
+}
+
+.watchlist-btn:hover {
+  color: $color-white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.pre-btn,
+.nxt-btn {
+  position: absolute;
+  top: 0;
+  width: 5%;
+  height: 100%;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.pre-btn {
+  left: 0;
+  background: linear-gradient(to right, #0c111b 0%, #0c111b00);
+}
+
+.nxt-btn {
+  right: 0;
+  background: linear-gradient(to left, #0c111b 0%, #0c111b00);
+}
+
+.pre-btn img,
+.nxt-btn img {
+  width: 15px;
+  height: 20px;
+  opacity: 0;
+}
+
+.pre-btn:hover img,
+.nxt-btn:hover img {
+  opacity: 1;
+}
+
+/* fin cards carousel */
+  .item {
+    width: 50%;
+    position: relative;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  /* .card {
+    position: relative;
+    min-width: 172px;
+    width: 172px;
+    height: 105px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+    object-fit: cover;
+    background-color: #131520;
+    box-shadow: #41464b 0px 16px 8px -10px;
+  } */
+  .card {
+    position: relative;
+    min-width: 157px;
+    width: 150px;
+    height: 93px;
+    border-radius: 5px;
+    /* overflow: hidden; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+    object-fit: cover;
+    background-color: #131520;
+    box-shadow: #41464b 0px 16px 8px -10px;
+}
+
+  .card-container {
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    height: 125px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+  }
+
+  .movies-list {
+    width: 100%;
+    height: 118px;
+    position: relative;
+    margin: 10px 0 20px;
+  }
+
+  .title {
+    color: $color-white;
+    opacity: 0.9;
+    padding-left: 4%;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.6;
+  }
+
+  .div-mobil {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    height: 72px;
+    flex-direction: row-reverse;
+  }
+
+  .img-acceuil-mobile {
+    width: 200px;
+    height: 100px;
+    margin-left: 6%;
+  }
+
+  .cardmovievideo {
+    width: 95%;
+    height: 237px;
+
+  }
+

@@ -1,0 +1,26 @@
+@use "variables" as *;
+/* carousel */
+#carouselExampleIndicators {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.carousel-item:hover {
+  border: $color-white solid 3px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 17px;
+  height: 14px;
+  border-radius: 46%
+}
+
+  .carousel-indicators {
+
+    display: none;
+  }
+
+  .crouselimg {
+    object-fit: cover;
+    height: 171px;
+  }
