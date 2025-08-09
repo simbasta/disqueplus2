@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Batman Begins",
+    "des": "Batman battles crime in Gotham.",
+    "img": "../../../img/poster 1.png",
+    "link": "#"
+  },
+  {
+    "name": "Justice League",
+    "des": "Heroes unite to save the world.",
+    "img": "../../../img/poster 2.png",
+    "link": "#"
+  }
+]
