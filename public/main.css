@@ -733,6 +733,10 @@ ol li {
   display: block;
 }
 
+.hidden {
+  display: none;
+}
+
 .bordernone {
   border: none;
 }

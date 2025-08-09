@@ -65,25 +65,6 @@ cardContainers.forEach((item, i) => {
 // pages img effect
 
 
-// barre de recherche 
-
-// JavaScript code 
-function search_animal() { 
-    let input = document.getElementById('searchbar').value 
-    input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('movies'); 
-      
-    for (i = 0; i < x.length; i++) {  
-        
-        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
-            x[i].style.display="none"; 
-        } 
-        else { 
-            x[i].style.display="list-item";                  
-        } 
-    } 
-} 
-
 // logo movile
 let divmobil = document.querySelector('.div-mobil')
 window.addEventListener("scroll", function (){
