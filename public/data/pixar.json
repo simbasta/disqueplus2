@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Toy Story",
+    "des": "Toys come to life when humans aren't around.",
+    "img": "../../../img/poster 7.png",
+    "link": "#"
+  },
+  {
+    "name": "Cars",
+    "des": "A racing car discovers friendship.",
+    "img": "../../../img/poster 8.png",
+    "link": "#"
+  }
+]

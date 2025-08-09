@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Batman Begins",
+    "des": "Batman battles crime in Gotham.",
+    "img": "../../img/poster 1.png",
+    "link": "#",
+    "keywords": ["batman", "dc"]
+  },
+  {
+    "name": "Iron Man",
+    "des": "Tony Stark builds a suit of armor.",
+    "img": "../../img/poster 3.png",
+    "link": "#",
+    "keywords": ["iron man", "marvel"]
+  },
+  {
+    "name": "Moana",
+    "des": "A girl sails beyond the reef.",
+    "img": "../../img/poster 5.png",
+    "link": "#",
+    "keywords": ["moana", "disney"]
+  },
+  {
+    "name": "Toy Story",
+    "des": "Toys come to life when humans aren't around.",
+    "img": "../../img/poster 7.png",
+    "link": "#",
+    "keywords": ["toy story", "pixar"]
+  }
+]
