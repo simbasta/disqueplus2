@@ -17,25 +17,10 @@
 // })
 
 
+import { initCarousel } from './utils.js';
+
 // cards carousel
-
-
-let cardContainers = [...document.querySelectorAll('.card-container')];
-let preBtns = [...document.querySelectorAll('.pre-btn')];
-let nxtBtns = [...document.querySelectorAll('.nxt-btn')];
-
-cardContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
-
-    nxtBtns[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth - 200;
-    })
-
-    preBtns[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth + 200;
-    })
-})
+initCarousel('.card-container', '.pre-btn', '.nxt-btn');
 // fin cards carousel
 // cards carousel search page
 
@@ -67,35 +52,27 @@ cardContainers.forEach((item, i) => {
 
 // barre de recherche 
 
-// JavaScript code 
-function search_animal() { 
-    let input = document.getElementById('searchbar').value 
-    input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('movies'); 
-      
-    for (i = 0; i < x.length; i++) {  
-        
-        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
-            x[i].style.display="none"; 
-        } 
-        else { 
-            x[i].style.display="list-item";                  
-        } 
-    } 
-} 
+// JavaScript code
+window.search_animal = () => {
+    const input = document.getElementById('searchbar').value.toLowerCase();
+    const movies = document.getElementsByClassName('movies');
+
+    Array.from(movies).forEach(movie => {
+        movie.style.display = movie.innerHTML.toLowerCase().includes(input)
+            ? 'list-item'
+            : 'none';
+    });
+};
 
 // logo movile
-let divmobil = document.querySelector('.div-mobil')
-window.addEventListener("scroll", function (){
-    let navScroll = window.scrollY
+const divmobil = document.querySelector('.div-mobil');
+window.addEventListener('scroll', () => {
+    const navScroll = window.scrollY;
     if (navScroll >= 20) {
-        divmobil.style.transition = "0.5s"
-        divmobil.classList.add('opacity')
+        divmobil.style.transition = '0.5s';
+        divmobil.classList.add('opacity');
+    } else {
+        divmobil.classList.remove('opacity');
     }
-    else{
-        divmobil.classList.remove('opacity')
-    }
-})
-// 
-
+});
 
