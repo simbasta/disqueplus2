@@ -33,7 +33,7 @@ cardContainers.forEach((item, i) => {
     })
 
     preBtns[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth + 200;
+        item.scrollLeft -= containerWidth - 200;
     })
 })
 // fin cards carousel
@@ -68,12 +68,12 @@ cardContainers.forEach((item, i) => {
 // barre de recherche 
 
 // JavaScript code 
-function search_animal() { 
-    let input = document.getElementById('searchbar').value 
-    input=input.toLowerCase(); 
-    let x = document.getElementsByClassName('movies'); 
-      
-    for (i = 0; i < x.length; i++) {  
+function search_animal() {
+    let input = document.getElementById('searchbar').value;
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('movies');
+
+    for (let i = 0; i < x.length; i++) {
         
         if (!x[i].innerHTML.toLowerCase().includes(input)) { 
             x[i].style.display="none"; 
